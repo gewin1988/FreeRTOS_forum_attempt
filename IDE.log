@@ -7,3 +7,7 @@
 13:00:30 INFO  : Successfully done setting XSCT server connection channel  
 13:00:30 INFO  : Successfully done query RDI_DATADIR 
 13:00:30 INFO  : Successfully done setting workspace for the tool. 
+13:08:56 INFO  : Result from executing command 'getProjects': ForFreeRTOSForum
+13:08:56 INFO  : Result from executing command 'getPlatforms': xilinx_vck190_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_202220_1/xilinx_vck190_base_202220_1.xpfm;xilinx_vck190_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vck190_base_dfx_202220_1/xilinx_vck190_base_dfx_202220_1.xpfm;xilinx_vmk180_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_vmk180_base_202220_1/xilinx_vmk180_base_202220_1.xpfm;xilinx_zcu102_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|C:/Xilinx/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+13:08:57 INFO  : Checking for BSP changes to sync application flags for project 'ForFreeRTOSForumApp'...
+13:10:18 INFO  : Checking for BSP changes to sync application flags for project 'ForFreeRTOSForumApp'...

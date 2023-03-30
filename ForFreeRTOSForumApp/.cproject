@@ -61,11 +61,19 @@
                                 								
                                 <option id="xilinx.gnu.compiler.dircategory.includes.1628575273" name="Include Paths" superClass="xilinx.gnu.compiler.dircategory.includes" useByScannerDiscovery="false" valueType="includePath">
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;D:\3dparty\FreeRTOS-LTS\FreeRTOS\FreeRTOS-Plus-TCP\source\include&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ForFreeRTOSForumApp_system/FreeRTOS-Plus-TCP/source/portable/Compiler/GCC}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ForFreeRTOSForumApp_system/FreeRTOS-Plus-TCP/source/portable/NetworkInterface}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ForFreeRTOSForumApp_system/FreeRTOS-Plus-TCP/source/portable/NetworkInterface/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/ForFreeRTOSForumApp_system/FreeRTOS-Plus-TCP/source/include}&quot;"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;D:\3dparty\FreeRTOS-LTS\FreeRTOS\FreeRTOS-Plus-TCP\source\portable\NetworkInterface\include&quot;"/>
                                     									
-                                    <listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+                                    <listOptionValue builtIn="false" value="&quot;D:\3dparty\FreeRTOS-LTS\FreeRTOS\FreeRTOS-Plus-TCP\source\include&quot;"/>
                                     									
                                     <listOptionValue builtIn="false" value="&quot;D:\3dparty\FreeRTOS-LTS\FreeRTOS\FreeRTOS-Plus-TCP\source\portable\NetworkInterface&quot;"/>
                                     									
@@ -346,5 +354,7 @@
     </storageModule>
     	
     <storageModule moduleId="org.eclipse.cdt.core.pathentry"/>
+    	
+    <storageModule moduleId="refreshScope"/>
     
 </cproject>
