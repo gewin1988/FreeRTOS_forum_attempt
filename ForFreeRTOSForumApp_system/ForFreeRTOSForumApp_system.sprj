@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="ASCII"?>
-<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="ForFreeRTOSForumApp_system" platform="C:/Users/forgoa/workspace2/ForFreeRTOSForum/export/ForFreeRTOSForum/ForFreeRTOSForum.xpfm" platformUID="xilinx:zedboard::0.0(custom)" sysConfig="ForFreeRTOSForum" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
-  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.308480926">
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:systemproject="http://www.xilinx.com/systemproject" name="ForFreeRTOSForumApp_system" platform="C:/Users/forgoa/workspace2/ForFreeRTOSForum/export/ForFreeRTOSForum/ForFreeRTOSForum.xpfm" platformUID="" sysConfig="ForFreeRTOSForum" runtime="C/C++">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.1470508265">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
-      <applications name="ForFreeRTOSForumApp" domainName="freertos10_xilinx_domain" domainPrettyName="freertos10_xilinx on ps7_cortexa9_0" appBuildConfig="Debug"/>
-      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+      <applications name="ForFreeRTOSForumApp" domainName="freertos10_xilinx_domain" domainPrettyName="freertos10_xilinx_domain" appBuildConfig="Debug"/>
     </configBuildOptions>
-    <lastBuildOptions xsi:type="systemproject:SystemOptions">
-      <applications name="ForFreeRTOSForumApp" domainName="freertos10_xilinx_domain" domainPrettyName="freertos10_xilinx on ps7_cortexa9_0" appBuildConfig="Debug"/>
-      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
-    </lastBuildOptions>
   </configuration>
-  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.550798048">
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.187633775">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
-      <applications name="ForFreeRTOSForumApp" domainName="freertos10_xilinx_domain" domainPrettyName="freertos10_xilinx on ps7_cortexa9_0" appBuildConfig="Release"/>
-      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+      <applications name="ForFreeRTOSForumApp" domainName="freertos10_xilinx_domain" domainPrettyName="freertos10_xilinx_domain" appBuildConfig="Release"/>
     </configBuildOptions>
   </configuration>
 </systemproject:SystemProject>
