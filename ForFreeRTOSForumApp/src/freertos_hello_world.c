@@ -52,6 +52,78 @@ StaticTimer_t xTimerBuffer;
 static StaticQueue_t xStaticQueue;
 #endif
 
+
+#if defined(ipconfigIPv4_BACKWARD_COMPATIBLE) && ( ipconfigIPv4_BACKWARD_COMPATIBLE == 0 )
+	void vApplicationIPNetworkEventHook_Multi( eIPCallbackEvent_t eNetworkEvent, struct xNetworkEndPoint* pxEndPoint )
+#else
+	void vApplicationIPNetworkEventHook( eIPCallbackEvent_t eNetworkEvent)
+#endif /* defined(ipconfigIPv4_BACKWARD_COMPATIBLE) && ( ipconfigIPv4_BACKWARD_COMPATIBLE == 0 ) */
+{
+    /* If the network has just come up...*/
+    if( eNetworkEvent == eNetworkUp )
+    {
+    uint32_t ulIPAddress, ulNetMask, ulGatewayAddress, ulDNSServerAddress;
+    char cBuffer[ 16 ];
+
+        /* Print out the network configuration, which may have come from a DHCP
+         * server. */
+#if defined(ipconfigIPv4_BACKWARD_COMPATIBLE) && ( ipconfigIPv4_BACKWARD_COMPATIBLE == 0 )
+        FreeRTOS_GetEndPointConfiguration( &ulIPAddress, &ulNetMask, &ulGatewayAddress, &ulDNSServerAddress, pxNetworkEndPoints );
+#else
+        FreeRTOS_GetAddressConfiguration( &ulIPAddress, &ulNetMask, &ulGatewayAddress, &ulDNSServerAddress );
+#endif /* defined(ipconfigIPv4_BACKWARD_COMPATIBLE) && ( ipconfigIPv4_BACKWARD_COMPATIBLE == 0 ) */
+        FreeRTOS_inet_ntoa( ulIPAddress, cBuffer );
+        configPRINTF( ( "IP Address: %s\n", cBuffer ) );
+
+        FreeRTOS_inet_ntoa( ulNetMask, cBuffer );
+        configPRINTF( ( "Subnet Mask: %s\n", cBuffer ) );
+
+        FreeRTOS_inet_ntoa( ulGatewayAddress, cBuffer );
+        configPRINTF( ( "Gateway Address: %s\n", cBuffer ) );
+
+        FreeRTOS_inet_ntoa( ulDNSServerAddress, cBuffer );
+        configPRINTF( ( "DNS Server Address: %s\n", cBuffer ) );
+
+
+    }
+
+}
+
+ //ulApplicationGetNextSequenceNumber
+	BaseType_t xApplicationGetRandomNumber( uint32_t *pulValue )
+	{
+	BaseType_t xReturn;
+
+		if( *pulValue = 0xFFFF )
+		{
+			xReturn = pdPASS;
+		}
+		else
+		{
+			xReturn = pdFAIL;
+		}
+
+		return xReturn;
+	}
+
+	uint32_t ulApplicationGetNextSequenceNumber( uint32_t ulSourceAddress,
+												 uint16_t usSourcePort,
+												 uint32_t ulDestinationAddress,
+												 uint16_t usDestinationPort )
+	{
+		uint32_t ulReturn;
+
+		( void ) ulSourceAddress;
+		( void ) usSourcePort;
+		( void ) ulDestinationAddress;
+		( void ) usDestinationPort;
+
+		xApplicationGetRandomNumber( &ulReturn );
+
+		return ulReturn;
+	}
+
+
 int main( void )
 {
 	const TickType_t x10seconds = pdMS_TO_TICKS( DELAY_10_SECONDS );

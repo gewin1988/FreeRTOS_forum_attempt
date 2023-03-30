@@ -89,10 +89,8 @@
 #ifndef configEMAC_TASK_STACK_SIZE
     #define configEMAC_TASK_STACK_SIZE    ( 8 * configMINIMAL_STACK_SIZE )
 #endif
-
 #define ipconfigZERO_COPY_RX_DRIVER 1
 #define ipconfigZERO_COPY_TX_DRIVER 1
-
 #if ( ipconfigZERO_COPY_RX_DRIVER == 0 || ipconfigZERO_COPY_TX_DRIVER == 0 )
     #error Please define both 'ipconfigZERO_COPY_RX_DRIVER' and 'ipconfigZERO_COPY_TX_DRIVER' as 1
 #endif
